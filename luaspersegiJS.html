@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luaspersegi</title>
+
+    <style>
+    .persegi  {
+        background-color: black;
+        color: white;
+        display: inline;
+    }
+    </style>
+</head>
+<body>
+    <div class="persegi">
+                Masukan luas sisi pertama persegi <input type="text" id="s1"> <br>
+                Masukan luas sisi kedua persegi   <input type="text" id="s2" oninput="hasil()"> <br>
+                
+                <th>Jumlah luas persegi adalah : <span id="hasil"</span></th>
+            </tr>
+        </table>
+       
+    </div>
+
+    <script type="text/javascript">
+    function hasil () {
+        var s1 = document.getElementById('s1').value ;
+        var s2 = document.getElementById('s2').value ;
+
+        var hasil = s1 * s2 ;
+        document.getElementById('hasil').innerHTML = hasil ;
+    }
+        
+    </script>
+    
+</body>
+</html>

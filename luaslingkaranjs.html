@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Luas lingkaran</h1>
+    <p>Masukan nilai jari<input type="text" id="j"</p>
+    <p>Masukan nilai jari2<input type="text" id="j2"</p>
+    <p>Masukan rumus konstanta phi<input type="text" id="konstanta" oninput="hasil()"></p>
+
+    <p>luas lingkaran adalah<span id="hasil"></span></p>
+    <br>
+    
+
+ 
+    <script type="text/javascript">
+    function hasil  () {
+        var j = document.getElementById('j').value;
+        var j2 = document.getElementById('j2').value;
+        var konstanta = document.getElementById('konstanta').value;
+
+        var hasil = j * j2 * konstanta ;
+        document.getElementById('hasil').innerHTML = hasil ;
+    }
+
+    </script>
+
+    
+
+
+    
+    
+</body>
+</html>

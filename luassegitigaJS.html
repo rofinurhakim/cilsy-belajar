@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luasSegitiga</title>
+</head>
+<body>
+    <p>masukan alas segitiga <input type="text" id="a" </p>
+    <p>masukan tinggi segitiga <input type="text" id="t" </p>
+    <p>masukan rumus 1/2 <input type="text" id="rumus" oninput="hasil()"></p>
+
+    <p>luas segitiga adalah : <span id="hasil"</span></p>
+    
+    <script type="text/javascript">
+     function hasil () {
+         var a = document.getElementById('a').value;
+         var t = document.getElementById('t').value;
+         var rumus = document.getElementById('rumus').value;
+
+         var hasil= a * t * rumus ;
+         document.getElementById('hasil').innerHTML = hasil ;
+     }
+
+
+        
+    </script>
+
+    
+    
+</body>
+</html>

@@ -14,11 +14,13 @@
         let SosialMedia = ["Apple", "Microsoft", "Google", "facebook", "Spotify", "Amazon", "Netflix", "Slack"]
         
         let htmlsosialMedia=""
+        let i = 2;
 
-        for (let index = 0; index < SosialMedia.length; index++) {
-            htmlsosialMedia += SosialMedia[index] + "<br>"
-            
+        while (SosialMedia[i]) {
+            htmlsosialMedia += SosialMedia[i] + "<br>" ;
+            i++;
         }
+
         return htmlsosialMedia
     }
     document.getElementById("SosialMedia").innerHTML = MediaSosial()

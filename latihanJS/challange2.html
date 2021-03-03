@@ -8,25 +8,32 @@
 </head>
 <body>
     <span id ="hasil" </span>
-    
-    <script>
-        function isidata() {
-            let title = ["quis ut nam facilis et officia qui", "delectus aut autem"]
-            let htmlStatus=""
-
-        class benar {
-            constructor() {
-                this.benar = ("True")
-            }
-        class salah {
-            constructor() {
-                this.salah ("False")
+</body>
+<script>
+    function dataList () {
+        let isiData = ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]
+        if (isiData ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]) {
+            return "TRUE"
             
-        }
-        if()
+        } else if ( isiData ["userId: 1"]) {
+            return "False"
+        
+        let htmlisiData=""
+
+        for (let index = 0; index < isiData.length; index++) {
+            htmlisiData += isiData[index] + "<br>"
+   
+
+    }
         
         }
-    </script>
+        return htmlisiData
+    }
+    document.getElementById("hasil").innerHTML = dataList ()
+  
+
+
     
-</body>
+
+</script>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange 1</title>
+</head>
+<body>
+    <form>
+        <p>
+            User id : <input type="text" id="userId">
+        </p>
+
+        <p>
+            Id : <input type="text" id="id"> 
+        </p>
+
+        <p>
+            Title : <input type="text" id="title"> <br>
+        </p> 
+
+        <p>
+            <button onclick="submitdata()"> Submit </button>
+        </p> 
+    </form>
+
+    <script>
+        function submitdata() {
+            let userId = document.getElementById("userId").value ;
+            let id = document.getElementById("id").value ;
+            let title = document.getElementById("title").value ;
+            
+            alert(userId + id + title )
+
+        }
+
+    </script>
+    
+</body>
+</html>

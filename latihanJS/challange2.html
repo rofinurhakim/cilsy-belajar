@@ -12,28 +12,34 @@
 <script>
     function dataList () {
         let isiData = ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]
-        if (isiData ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]) {
-            return "TRUE"
-            
-        } else if ( isiData ["userId: 1"]) {
-            return "False"
         
         let htmlisiData=""
 
         for (let index = 0; index < isiData.length; index++) {
             htmlisiData += isiData[index] + "<br>"
-   
+    
 
-    }
-        
+            
+            
         }
         return htmlisiData
     }
     document.getElementById("hasil").innerHTML = dataList ()
-  
+
+    function status() {
+        let isiStatus = ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]
+        
+        if (isiStatus ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"] ) {
+            return "True"
+        } else if (["userId: 1", "id: 1"] ) {
+            return "False"
+
+        }
 
 
-    
+    }
+    document.getElementById("hasil").innerHTML = status ()
+
 
 </script>
 </html>

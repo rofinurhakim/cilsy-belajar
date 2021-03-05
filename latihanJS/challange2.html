@@ -5,41 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chalange2</title>
+
+    <style>
+        .success {
+            color: white;
+            background-color: green
+        }
+
+        .failed {
+            color: white;
+            background-color: red
+        }
+    </style>
 </head>
 <body>
-    <span id ="hasil" </span>
+    <span id ="hasil"></span>
 </body>
 <script>
-    function dataList () {
-        let isiData = ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]
-        
-        let htmlisiData=""
+    function dataList() {
+        let isiData = 
+            
+            [   
+                
+                {
+                    userId: 1,
+                    id: 1,
+                    title: "delectus aut autem data ke 1 - inex ke 0",
+                    completed: false
+                },
+                
+                {
+                     
+                    userId: 1,
+                    id: 2,
+                    title: "quis ut nam facilis et officia qui data ke 2 - index ke 1",
+                    completed: false
+                },
+                 
+                {
+                     
+                    userId: 1,
+                    id: 3,
+                    title: "quis ut nam facilis et officia qui data ke 3 - index ke 2",
+                    completed: true
+                },
+                 
+                {
+                     
+                    userId: 1,
+                    id: 2,
+                    title: "quis ut nam facilis et officia qui data ke 4 - index ke 3",
+                    completed: false
+                },
+                
+        ]
 
-        for (let index = 0; index < isiData.length; index++) {
-            htmlisiData += isiData[index] + "<br>"
+        let templateHTML = ""
+
+        let templateStatus = "";
+        console.log(isiData.length, isiData)
+
+        for(let i = 0; i < isiData.length; i++){
+            
+                
+            if(isiData[i].completed == true) {
+                
+                templateStatus = `<p class="success">TRUE</span>`
+            } else {
+                
+                templateStatus = `<span class="failed">FALSE</span>`
+            }
+
+            if((isiData[i].id % 2) == 1) {
+                
+                templateHTML += `${isiData[i].title}<br> ${templateStatus}<br><br> `
+            } else {
+                
+               
+            }
+
+
+
+            
+        }
+
+        
+        return templateHTML
+    }
+        
+       
+    document.getElementById("hasil").innerHTML = dataList()
+  
     
 
-            
-            
-        }
-        return htmlisiData
-    }
-    document.getElementById("hasil").innerHTML = dataList ()
-
-    function status() {
-        let isiStatus = ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"]
-        
-        if (isiStatus ["userId: 1", "id: 1", "title: quis ut nam facilis et officia qui"] ) {
-            return "True"
-        } else if (["userId: 1", "id: 1"] ) {
-            return "False"
-
-        }
-
-
-    }
-    document.getElementById("hasil").innerHTML = status ()
-
+    
 
 </script>
 </html>

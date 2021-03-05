@@ -63,14 +63,14 @@
         let templateHTML = ""
 
         let templateStatus = "";
-        console.log(isiData.length, isiData)
+        
 
         for(let i = 0; i < isiData.length; i++){
             
                 
             if(isiData[i].completed == true) {
                 
-                templateStatus = `<p class="success">TRUE</span>`
+                templateStatus = `<span class="success">TRUE</span>`
             } else {
                 
                 templateStatus = `<span class="failed">FALSE</span>`
